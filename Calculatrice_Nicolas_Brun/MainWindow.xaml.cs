@@ -19,6 +19,7 @@ namespace Calculatrice_Nicolas_Brun
         double premierNombre = 0;
 
         string operation = "";
+        //test git 
         public MainWindow()
         {
             InitializeComponent();
