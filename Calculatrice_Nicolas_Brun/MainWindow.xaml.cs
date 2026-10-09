@@ -295,8 +295,15 @@ namespace Calculatrice_Nicolas_Brun
 
         private void BTN_pi_Click(object sender, RoutedEventArgs e)
         {
-            TB_Display.Text = Math.PI.ToString();
-            premierNombre = Math.PI;
+            if (operation == "+" || operation == "-" ||
+        operation == "*" || operation == "/")
+            {
+                TB_Display.Text = Math.PI.ToString();
+            }
+            else
+            {
+                TB_Display.Text = Math.PI.ToString();
+            }
         }
 
         private void BTN_plusoumoins_Click(object sender, RoutedEventArgs e)
