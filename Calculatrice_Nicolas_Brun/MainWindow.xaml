@@ -6,17 +6,16 @@
         xmlns:local="clr-namespace:Calculatrice_Nicolas_Brun"
         mc:Ignorable="d"
         Title="Calculatrice" Height="500" Width="475">
-    
-    <Grid Background="Black">
 
+    <Grid Background="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-
             <ColumnDefinition Width="90"/>
         </Grid.ColumnDefinitions>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>
             <RowDefinition Height="*"/>
