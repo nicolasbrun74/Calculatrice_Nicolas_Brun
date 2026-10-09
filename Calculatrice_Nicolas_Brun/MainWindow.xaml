@@ -5,70 +5,90 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculatrice_Nicolas_Brun"
         mc:Ignorable="d"
-        Title="Calculatrice" Height="450" Width="425">
-	<Grid>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="*"/>
-			<ColumnDefinition Width="*"/>
-			<ColumnDefinition Width="*"/>
-			<ColumnDefinition Width="150"/>
-		</Grid.ColumnDefinitions>
+        Title="Calculatrice" Height="500" Width="475">
+    
+    <Grid Background="Black">
 
-		<Grid.RowDefinitions>
-			<RowDefinition Height="70"/>
-			<RowDefinition Height="*"/>
-			<RowDefinition Height="*"/>
-			<RowDefinition Height="*"/>
-			<RowDefinition Height="*"/>
-		</Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
 
-		<TextBox Grid.Row="0"
-         Grid.ColumnSpan="4"
+            <ColumnDefinition Width="90"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBox Grid.Row="0"
+         Grid.ColumnSpan="5"
          Name="TB_Display"
          Text="0 ="
          FontSize="40"
+         Background="Black"
+         Foreground="White"
          HorizontalContentAlignment="Right"
          VerticalContentAlignment="Center"/>
 
-		<Button Grid.Row="1" Grid.Column="0" Name="BTN_1" Content="1" Click="BTN_1_Click" />
-		<Button Grid.Row="1" Grid.Column="1" Name="BTN_2" Content="2" Click="BTN_2_Click" />
-		<Button Grid.Row="1" Grid.Column="2" Name="BTN_3" Content="3" Click="BTN_3_Click" />
-		<Button Grid.Row="1" Grid.Column="3" Name="BTN_Plus" Content="+" Click="BTN_Plus_Click" Background="orange" />
+        <Button Grid.Row="1" Grid.Column="0" Name="BTN_1" Content="1" Click="BTN_1_Click" />
+        <Button Grid.Row="1" Grid.Column="1" Name="BTN_2" Content="2" Click="BTN_2_Click" />
+        <Button Grid.Row="1" Grid.Column="2" Name="BTN_3" Content="3" Click="BTN_3_Click" />
+        <Button Grid.Row="1" Grid.Column="3" Name="BTN_Plus" Content="+" Click="BTN_Plus_Click" Background="orange" />
 
-		<Button Grid.Row="2" Grid.Column="0" Name="BTN_4" Content="4" Click="BTN_4_Click" />
-		<Button Grid.Row="2" Grid.Column="1" Name="BTN_5" Content="5" Click="BTN_5_Click" />
-		<Button Grid.Row="2" Grid.Column="2" Name="BTN_6" Content="6" Click="BTN_6_Click" />
-		<Button Grid.Row="2" Grid.Column="3" Name="BTN_Fois" Content="*" Click="BTN_Fois_Click" Background="orange"/>
+        <Button Grid.Row="2" Grid.Column="0" Name="BTN_4" Content="4" Click="BTN_4_Click" />
+        <Button Grid.Row="2" Grid.Column="1" Name="BTN_5" Content="5" Click="BTN_5_Click" />
+        <Button Grid.Row="2" Grid.Column="2" Name="BTN_6" Content="6" Click="BTN_6_Click" />
+        <Button Grid.Row="2" Grid.Column="3" Name="BTN_Fois" Content="*" Click="BTN_Fois_Click" Background="orange"/>
 
-		<Button Grid.Row="3" Grid.Column="0" Name="BTN_7" Content="7" Click="BTN_7_Click" />
-		<Button Grid.Row="3" Grid.Column="1" Name="BTN_8" Content="8" Click="BTN_8_Click" />
-		<Button Grid.Row="3" Grid.Column="2" Name="BTN_9" Content="9" Click="BTN_9_Click" />
-		<Button Grid.Row="3" Grid.Column="3" Name="BTN_Moins" Content="-" Click="BTN_Moins_Click" Background="orange"/>
+        <Button Grid.Row="3" Grid.Column="0" Name="BTN_7" Content="7" Click="BTN_7_Click" />
+        <Button Grid.Row="3" Grid.Column="1" Name="BTN_8" Content="8" Click="BTN_8_Click" />
+        <Button Grid.Row="3" Grid.Column="2" Name="BTN_9" Content="9" Click="BTN_9_Click" />
+        <Button Grid.Row="3" Grid.Column="3" Name="BTN_Moins" Content="-" Click="BTN_Moins_Click" Background="orange"/>
 
-		<Button Grid.Row="4" Grid.Column="0" Name="BTN_0" Content="0" Click="BTN_0_Click" />
-		<Button Grid.Row="4" Grid.Column="1" Name="BTN_CLR" Content="CLR" Click="BTN_CLR_Click" Background="Red"/>
-		<Button Grid.Row="4" Grid.Column="2" Name="BTN_egale" Content="=" Click="BTN_egale_Click" Background="Green"/>
-		<Button Grid.Row="4" Grid.Column="3" Name="BTN_DIV" Content="/" Click="BTN_DIV_Click" Background="orange"/>
-
-		<Grid.Resources>
-			<Style TargetType="{x:Type Button}">
-				<Setter Property="Margin" Value="10"/>
-				<Setter Property="Background" Value="LightBlue"/>
-				<Setter Property="FontSize" Value="38"/>
-				<Style.Resources>
-					<Style TargetType="Border">
-						<Setter Property="CornerRadius" Value="50"/>
-					</Style>
-				</Style.Resources>
-
-			</Style>
-			<Style x:Key="MyStyle" TargetType="{x:Type Control}">
-				<Setter Property="Margin" Value="10"/>
-				<Setter Property="Background" Value="green"/>
-				<Setter Property="FontSize" Value="38"/>
-			</Style>
-		</Grid.Resources>
+        <Button Grid.Row="4" Grid.Column="0" Name="BTN_0" Content="0" Click="BTN_0_Click" />
+        <Button Grid.Row="1" Grid.Column="4" Name="BTN_CLR" Content="C" Click="BTN_CLR_Click" Background="Red" />
+        <Button Grid.Row="4" Grid.Column="2" Name="BTN_egale" Content="=" Click="BTN_egale_Click" Background="#16B84E"/>
+        <Button Grid.Row="4" Grid.Column="3" Name="BTN_DIV" Content="/" Click="BTN_DIV_Click" Background="orange"/>
+        <Button Grid.Row="4" Grid.Column="5" Name="BTN_Cos" Content="Cos" Click="BTN_Cos_Click" />
+        <Button Grid.Row="2" Grid.Column="5" Name="BTN_Sin" Content="Sin" Click="BTN_Sin_Click" />
+        <Button Grid.Row="3" Grid.Column="5" Name="BTN_Tan" Content="Tan" Click="BTN_Tan_Click" />
+        <Button Grid.Row="4" Grid.Column="1" Name="BTN_virgule" Content="," Click="BTN_virgule_Click" />
+        <Button Grid.Row="5" Grid.Column="3" Name="BTN_sqrt" Content="√" Click="BTN_sqrt_Click" />
+        <Button Grid.Row="5" Grid.Column="4" Name="BTN_carre" Content="x²" Click="BTN_carre_Click" />
+        <Button Grid.Row="5" Grid.Column="2" Name="BTN_pi" Content="π" Click="BTN_pi_Click" />
+        <Button Grid.Row="5" Grid.Column="1" Name="BTN_plusoumoins" Content="±" Click="BTN_plusoumoins_Click" />
+        <Button Grid.Row="5" Grid.Column="0" Name="BTN_log" Content="log" Click="BTN_log_Click" />
 
 
-	</Grid>
+
+
+        <Grid.Resources>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Margin" Value="5"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="FontSize" Value="38"/>
+                <Style.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="50"/>
+                    </Style>
+                </Style.Resources>
+
+            </Style>
+            <Style x:Key="MyStyle" TargetType="{x:Type Control}">
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Background" Value="green"/>
+                <Setter Property="FontSize" Value="38"/>
+            </Style>
+        </Grid.Resources>
+
+
+    </Grid>
 </Window>
