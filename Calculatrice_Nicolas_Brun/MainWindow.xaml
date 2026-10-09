@@ -76,7 +76,7 @@
                 <Setter Property="FontSize" Value="38"/>
                 <Style.Resources>
                     <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="50"/>
+                        <Setter Property="CornerRadius" Value="30"/>
                     </Style>
                 </Style.Resources>
 
