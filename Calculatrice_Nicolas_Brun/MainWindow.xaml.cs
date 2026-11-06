@@ -24,113 +24,82 @@ namespace Calculatrice_Nicolas_Brun
         {
             InitializeComponent();
         }
-        private void BTN_0_Click(object sender, RoutedEventArgs e)
+
+        private void displayNumber(string number)
         {
             if (TB_Display.Text == "0 =" || TB_Display.Text == "0")
             {
                 TB_Display.Text = "";
             }
+            else
+            {
+                TB_Display.Text = TB_Display.Text + number;
+            }
 
-            TB_Display.Text = TB_Display.Text + "0";
+        }
+
+        private void BTN_0_Click(object sender, RoutedEventArgs e)
+        {
+          displayNumber("0");
 
         }
 
         private void BTN_1_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0 =" || TB_Display.Text == "0")
-            {
-                TB_Display.Text = "";
-            }
-
-            TB_Display.Text = TB_Display.Text + "1";
+            displayNumber("1");
 
         }
 
         private void BTN_2_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0 =" || TB_Display.Text == "0")
-            {
-                TB_Display.Text = "";
-            }
-
-            TB_Display.Text = TB_Display.Text + "2";
+            displayNumber("2");
 
         }
 
         private void BTN_3_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0 =" || TB_Display.Text == "0")
-            {
-                TB_Display.Text = "";
-            }
-
-            TB_Display.Text = TB_Display.Text + "3";
+            displayNumber("3");
 
         }
 
         private void BTN_4_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0 =" || TB_Display.Text == "0")
-            {
-                TB_Display.Text = "";
-            }
+            displayNumber("4");
 
-            TB_Display.Text = TB_Display.Text + "4";
 
         }
 
         private void BTN_5_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0 =" || TB_Display.Text == "0")
-            {
-                TB_Display.Text = "";
-            }
+            displayNumber("5");
 
-            TB_Display.Text = TB_Display.Text + "5";
 
         }
 
         private void BTN_6_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0 =" || TB_Display.Text == "0")
-            {
-                TB_Display.Text = "";
-            }
+            displayNumber("6");
 
-            TB_Display.Text = TB_Display.Text + "6";
 
         }
 
         private void BTN_7_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0 =" || TB_Display.Text == "0")
-            {
-                TB_Display.Text = "";
-            }
+            displayNumber("7");
 
-            TB_Display.Text = TB_Display.Text + "7";
 
         }
 
         private void BTN_8_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0 =" || TB_Display.Text == "0")
-            {
-                TB_Display.Text = "";
-            }
+            displayNumber("8");
 
-            TB_Display.Text = TB_Display.Text + "8";
 
         }
 
         private void BTN_9_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0 =" || TB_Display.Text == "0")
-            {
-                TB_Display.Text = "";
-            }
-
-            TB_Display.Text = TB_Display.Text + "9";
+            displayNumber("9");
 
         }
         private void BTN_Fois_Click(object sender, RoutedEventArgs e)

@@ -13,11 +13,11 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="90"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         
         <Grid.RowDefinitions>
-            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -79,11 +79,6 @@
                     </Style>
                 </Style.Resources>
 
-            </Style>
-            <Style x:Key="MyStyle" TargetType="{x:Type Control}">
-                <Setter Property="Margin" Value="10"/>
-                <Setter Property="Background" Value="green"/>
-                <Setter Property="FontSize" Value="38"/>
             </Style>
         </Grid.Resources>
 
